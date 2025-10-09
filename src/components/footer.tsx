@@ -8,25 +8,25 @@ export function Footer() {
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/charlesnwobodo",
+      href: "https://github.com/Charly-Ade",
       color: "hover:text-primary"
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://linkedin.com/in/charlesnwobodo",
+      href: "https://linkedin.com/in/nwodo-charles",
       color: "hover:text-blue-500"
     },
     {
       name: "Twitter",
       icon: Twitter,
-      href: "https://twitter.com/charlesnwobodo",
+      href: "https://twitter.com/charlesnwodo",
       color: "hover:text-blue-400"
     },
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:charles@example.com",
+      href: "mailto:charlesnwodo77@gmail.com",
       color: "hover:text-accent"
     }
   ]
@@ -37,7 +37,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           <div>
             <h3 className="font-display font-bold text-xl text-gradient mb-2">
-              Charles Nwobodo
+              Charles Nwodo
             </h3>
             <p className="text-muted-foreground text-sm">
               Writer & Software Developer
@@ -69,7 +69,7 @@ export function Footer() {
 
           <div className="text-center md:text-right">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Charles Nwobodo. All rights reserved.
+              © {currentYear} Charles Nwodo. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground mt-1">
               Built with React, TypeScript & Tailwind CSS
@@ -77,11 +77,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-border text-center">
-          <p className="text-xs text-muted-foreground">
-            "Code is poetry written in logic, stories are logic written in emotion."
-          </p>
-        </div>
+        
       </div>
     </footer>
   )

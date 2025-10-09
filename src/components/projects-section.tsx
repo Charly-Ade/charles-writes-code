@@ -13,10 +13,10 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: "Task Management App",
-      description: "A comprehensive task management application built with React and TypeScript, featuring real-time collaboration and advanced filtering capabilities.",
+      title: "Amstapay",
+      description: "A comfortable banking app use for payments, sending and revieving money.",
       tech: ["React", "TypeScript", "Node.js", "MongoDB"],
-      github: "#",
+      github: "https://github.com/Akintomiwa200/Amstapay",
       demo: "#",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop"
     },
@@ -24,7 +24,7 @@ export function ProjectsSection() {
       title: "Content Management System",
       description: "A headless CMS built for writers and content creators, with a focus on clean writing experience and powerful content organization.",
       tech: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-      github: "#",
+      github: "https://github.com/Charly-Ade/content-management-system",
       demo: "#",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop"
     },
@@ -32,7 +32,7 @@ export function ProjectsSection() {
       title: "E-commerce Platform",
       description: "A modern e-commerce solution with advanced product filtering, secure payments, and comprehensive admin dashboard.",
       tech: ["React", "Express", "Stripe", "AWS"],
-      github: "#",
+      github: "https://github.com/Charly-Ade/e-commerce-platform",
       demo: "#",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
     }
@@ -101,13 +101,17 @@ export function ProjectsSection() {
                 </div>
                 
                 <div className="flex gap-3">
-                  <Button size="sm" variant="outline" className="flex-1">
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
+                  <Button asChild size="sm" variant="outline" className="flex-1">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </a>
                   </Button>
-                  <Button size="sm" className="flex-1">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Demo
+                  <Button asChild size="sm" className="flex-1">
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Demo
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -116,9 +120,11 @@ export function ProjectsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="hover-lift">
-            <Github className="h-5 w-5 mr-2" />
-            View All Projects on GitHub
+          <Button asChild variant="outline" size="lg" className="hover-lift">
+            <a href="https://github.com/Charly-Ade" target="_blank" rel="noopener noreferrer">
+              <Github className="h-5 w-5 mr-2" />
+              View All Projects on GitHub
+            </a>
           </Button>
         </div>
       </div>

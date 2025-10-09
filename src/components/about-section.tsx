@@ -52,12 +52,12 @@ export function AboutSection() {
             <p className="text-muted-foreground mb-6 leading-relaxed">
               As both a writer and software developer, I understand the power of clear communication 
               and elegant solutions. Whether I'm crafting a compelling narrative or building 
-              user-friendly applications, my approach is always centered on creating meaningful 
+              user friendly applications, my approach is always centered on creating meaningful 
               experiences.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               My background in writing has taught me the importance of structure, clarity, and 
-              audience awareness—skills that translate beautifully into software development. 
+              audience awareness skills that translate beautifully into software development. 
               Every line of code tells a story, and every story can be enhanced with technology.
             </p>
           </div>
@@ -68,7 +68,7 @@ export function AboutSection() {
                 <BookOpen className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h4 className="font-semibold mb-2">Creative Writing</h4>
                 <p className="text-sm text-muted-foreground">
-                  Compelling narratives and engaging content
+                  Compelling narratives and engaging content. i have written few books on some platform like goodnovel, stary, novelsnacks.
                 </p>
               </CardContent>
             </Card>
@@ -79,6 +79,7 @@ export function AboutSection() {
                 <h4 className="font-semibold mb-2">Software Development</h4>
                 <p className="text-sm text-muted-foreground">
                   Clean, efficient, and scalable solutions
+                  created applications 
                 </p>
               </CardContent>
             </Card>
@@ -98,7 +99,7 @@ export function AboutSection() {
                 <Users className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h4 className="font-semibold mb-2">Collaboration</h4>
                 <p className="text-sm text-muted-foreground">
-                  Building bridges through communication
+                  Building bridges through communications
                 </p>
               </CardContent>
             </Card>

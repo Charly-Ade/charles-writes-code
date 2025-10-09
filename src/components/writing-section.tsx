@@ -13,11 +13,11 @@ export function WritingSection() {
 
   const articles = [
     {
-      title: "The Art of Clean Code: Writing for Humans",
-      excerpt: "Exploring how writing principles can make code more readable, maintainable, and beautiful. A deep dive into the parallels between literary craft and software development.",
-      category: "Technical Writing",
-      readTime: "8 min read",
-      date: "Nov 2024",
+      title: "Alpha rider my second chance mate",
+      excerpt: "",
+      category: "Werewolf Writing",
+      readTime: "30 mins",
+      date: "may 2025",
       link: "#"
     },
     {
