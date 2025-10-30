@@ -9,28 +9,28 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 export function ProjectsSection() {
-  const sectionRef = useRef<HTMLElement>(null)
+  const sectionRef = useRef(null)
 
   const projects = [
     {
       title: "Amstapay",
-      description: "A comfortable banking app use for payments, sending and revieving money.",
+      description: "A comfortable banking app used for payments, sending and receiving money.",
       tech: ["React", "TypeScript", "Node.js", "MongoDB"],
       github: "https://github.com/Akintomiwa200/Amstapay",
       demo: "#",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop"
+      image: "/images/amstapay6.png"
     },
     {
-      title: "Content Management System",
-      description: "A headless CMS built for writers and content creators, with a focus on clean writing experience and powerful content organization.",
+      title: "Audiofy",
+      description: "A comfortable music web app used for playing music and enjoying sounds.",
       tech: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-      github: "https://github.com/Charly-Ade/content-management-system",
-      demo: "#",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop"
+      github: "https://github.com/Charly-Ade/audiofy",
+      demo: "https://audiofy-kappa.vercel.app/",
+      image: "/images/audiofy.png"
     },
     {
       title: "E-commerce Platform",
-      description: "A modern e-commerce solution with advanced product filtering, secure payments, and comprehensive admin dashboard.",
+      description: "A modern e-commerce solution with advanced product filtering, secure payments, and a comprehensive admin dashboard.",
       tech: ["React", "Express", "Stripe", "AWS"],
       github: "https://github.com/Charly-Ade/e-commerce-platform",
       demo: "#",
@@ -40,9 +40,9 @@ export function ProjectsSection() {
 
   useEffect(() => {
     const elements = sectionRef.current?.querySelectorAll('.project-card')
-    
     elements?.forEach((element, index) => {
-      gsap.fromTo(element,
+      gsap.fromTo(
+        element,
         { y: 80, opacity: 0, scale: 0.9 },
         {
           y: 0,
@@ -54,8 +54,8 @@ export function ProjectsSection() {
           scrollTrigger: {
             trigger: element,
             start: "top 85%",
-            toggleActions: "play none none reverse"
-          }
+            toggleActions: "play none none reverse",
+          },
         }
       )
     })
@@ -83,14 +83,12 @@ export function ProjectsSection() {
                   className="w-full h-full object-cover transition-smooth group-hover:scale-105"
                 />
               </div>
-              
+
               <CardHeader>
                 <CardTitle className="text-gradient">{project.title}</CardTitle>
-                <CardDescription className="leading-relaxed">
-                  {project.description}
-                </CardDescription>
+                <CardDescription className="leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
-              
+
               <CardContent>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
@@ -99,7 +97,7 @@ export function ProjectsSection() {
                     </Badge>
                   ))}
                 </div>
-                
+
                 <div className="flex gap-3">
                   <Button asChild size="sm" variant="outline" className="flex-1">
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
